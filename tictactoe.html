@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tic Tac Oh!!!</title>
+	<link rel="stylesheet" type="text/css" href="tictactoe.css">
+</head>
+<body>
+	<div id="maincontainer">
+
+
+			<h1 id="title"><img src="ironmantitle.png"/></h1>
+
+
+		<div id="board">
+				<div class="boardblock" id="rw1cl1"></div>
+				<div class="boardblock" id="rw1cl2"></div>
+				<div class="boardblock" id="rw1cl3"></div>
+				<div class="boardblock" id="rw2cl1"></div>
+				<div class="boardblock" id="rw2cl2"></div>
+				<div class="boardblock" id="rw2cl3"></div>
+				<div class="boardblock" id="rw3cl1"></div>
+				<div class="boardblock" id="rw3cl2"></div>
+				<div class="boardblock" id="rw3cl3"></div>
+		</div>
+	</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+<!-- ============Lorin's Code==================
+
+<html>
+<head>
+	<title></title>
+	<style>
+	  .leftSide {border-left: 3px solid orange}
+	  .topSide {border-top: 3px solid orange}
+	  #board {width: 600px;}
+	  /*Divs inside of other divs*/
+	  #board > div {
+	  	border: 3px solid black;
+	    width: 190px;
+	    height: 190px;
+	    display: inline-block;
+	  }
+	</style>
+</head>
+<body>
+
+	<div id="board"></div>
+
+	<script>
+		var board = document.getElementById("board");
+		for (var i = 0;i<9;++i) {
+			var newDiv = document.createElement("div");
+			board.appendChild(newDiv);
+			newDiv.innerHTML = i;
+			newDiv.addEventListener("mouseenter").style.backgroundColor = "blue";
+			newDiv.addEventListener("mouseleave").style.backgroundColor = null;
+		}
+
+	</script>
+
+</body>
+</html>
+============================================ -->
+
+
