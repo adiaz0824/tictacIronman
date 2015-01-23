@@ -1,32 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Tic Tac Oh!!!</title>
+	<title>Tic Tac IronMan!</title>
 	<link rel="stylesheet" type="text/css" href="tictactoe.css">
 </head>
 <body>
-	<div id="maincontainer">
-
-
-			<h1 id="title"><img src="ironmantitle.png"/></h1>
-
-
-		<div id="board">
-				<div class="boardblock" id="rw1cl1"></div>
-				<div class="boardblock" id="rw1cl2"></div>
-				<div class="boardblock" id="rw1cl3"></div>
-				<div class="boardblock" id="rw2cl1"></div>
-				<div class="boardblock" id="rw2cl2"></div>
-				<div class="boardblock" id="rw2cl3"></div>
-				<div class="boardblock" id="rw3cl1"></div>
-				<div class="boardblock" id="rw3cl2"></div>
-				<div class="boardblock" id="rw3cl3"></div>
-		</div>
+	<div id="main">
+		<div id="maincontainer">
+				<h1 id="title"><img src="ironmantitle.png"/></h1>
+				<div id="submaincontainer">	
+					<div id="player1" class="players">Player 1</div>
+					<div id="board">
+						<div class="boardblock" id="rw1cl1"></div>
+						<div class="boardblock" id="rw1cl2"></div>
+						<div class="boardblock" id="rw1cl3"></div>
+						<div class="boardblock" id="rw2cl1"></div>
+						<div class="boardblock" id="rw2cl2"></div>
+						<div class="boardblock" id="rw2cl3"></div>
+						<div class="boardblock" id="rw3cl1"></div>
+						<div class="boardblock" id="rw3cl2"></div>
+						<div class="boardblock" id="rw3cl3"></div>
+					</div>
+					<div id="player2" class="players">Player2</div>
+				</div>
+			</div>
 	</div>
-
 </body>
 </html>
 
+
+<!-- Tic Tac Toe (pseudo code)
+Starting point - have it built as an HTML first.  
+What you need to start JS - Moves, Count, Player 1, Player 2 (or Player X and Player O)
+
+Start counter at 1, count ++ for every time Player 1 goes
+count % 2 = = 0 -> player 1
+count % 2 != 0 -> player 2
+
+X and O can be graphical (don’t need to code it)
+
+Start to build an array for the cells each player owns (push or pop) and check it against a win condition array.  Board fills up and compares it to the win array.  Might need to sort.  Need to iterate over multiple times
+After each move, append to each player's Array.
+
+other way to do it is to do something like i, i +1, i + 2 and then i, i+3, I+6
+
+win condition[[0, 1, 2], [3, 4, 5], [6, 7, 8],[0, 3, 6],[1, 4, 7], [2, 5, 8], [0, 4, 8], [2, 4, 6]] -->
 
 
 
